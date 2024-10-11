@@ -1,8 +1,0 @@
-h1 {
-  width: fit-content;
-  margin: auto;
-  font-size: 100px;
-  color: teal;
-  transform-origin: center;
-  transform: scaleX(15%);
-}
