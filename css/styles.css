@@ -92,6 +92,7 @@ section {
   width: 96px;
   height: 64px;
   text-align: center;
+  font-weight: bold;
   align-content: center;
   background-color: #aac3cb;
   border-radius: 20px;
@@ -299,9 +300,10 @@ main {
   padding: 5% 10%;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-#unique-cafe-page {
+#cafes-page {
   max-width: 1120px;
   width: 100%;
   display: grid;
@@ -309,7 +311,7 @@ main {
   gap: 50px;
 }
 
-.cafe-3-img {
+#cafes-page article {
   max-width: 1120px;
   width: 100%;
   display: grid;
@@ -357,6 +359,7 @@ main {
   margin-left: 20px;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+  word-break: break-all;
 }
 
 .cafe-opening-closing-info {
@@ -367,12 +370,25 @@ main {
   font-size: 16px;
 }
 
+.cafe-1-img .cafe-contact-info {
+  grid-row: auto;
+}
+
+.cafe-1-img .cafe-opening-closing-info {
+  height: min-content;
+  grid-row: auto;
+}
+
 .cafe-opening-closing-info td {
   width: 70%;
 }
 
 .cafe-paragraph {
   grid-column: span 2;
+}
+
+.cafe-1-img .cafe-paragraph {
+  grid-column: 3 / span 2;
 }
 
 button {
@@ -392,14 +408,14 @@ button:hover {
 }
 
 footer {
-  height: 200px;
+  height: 230px;
   position: relative;
   bottom: 0;
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(173, 140, 103);
   width: 100vw;
-  margin-top: 20px;
+  padding-top: 30px;
 }
 
 footer #social-media-list {
@@ -457,7 +473,7 @@ footer #social-media-list {
     font-size: 32px;
   }
 
-  .cafe-3-img {
+  #cafes-page article {
     grid-template-columns: calc(50% - 10px) calc(50% - 10px);
     gap: 20px;
   }
@@ -478,5 +494,9 @@ footer #social-media-list {
     font-size: 12px;
     grid-column: 2 / 3;
     grid-row: span 1;
+  }
+
+  .cafe-1-img .cafe-paragraph {
+    grid-column: 1 / span 2;
   }
 }
