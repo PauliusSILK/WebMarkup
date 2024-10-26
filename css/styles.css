@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allerta&family=Roboto+Slab:wght@100..900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -181,8 +187,7 @@ main {
 
 #hero {
   width: 100%;
-  height: 50vh;
-  overflow: hidden;
+  min-height: 50vh;
   background-image: url("../img/Temp-banner.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -192,11 +197,7 @@ main {
 }
 
 #header-logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
   height: 150px;
-  z-index: 1;
   filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.6));
 }
 
@@ -210,8 +211,6 @@ main {
 
 #hero figcaption {
   box-sizing: border-box;
-  position: absolute;
-  bottom: 50px;
   background-color: rgba(173, 140, 103, 80%);
   filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.6));
   border-radius: 20px;
@@ -222,6 +221,7 @@ main {
 #hero figcaption p {
   font-size: 24px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+  height: fit-content;
 }
 
 #cafe-grid {
@@ -424,7 +424,6 @@ footer #social-media-list {
   }
 
   #hero {
-    height: 40vh;
     padding: 0;
   }
 
