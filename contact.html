@@ -3,22 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <title>Contact Page The Coffee of Haarlem</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/img/Favicon.svg" />
+
+    <title>The Coffee of Haarlem</title>
   </head>
   <body>
-    <form action="https://coolinhollanddemo.azurewebsites.net/" method="post">
-      <h1>Contact Us</h1>
-      <label name="name">Name:</label>
-      <input type="text" name="name" />
+    <header id="header-nav">
+      <nav id="navbar">
+        <img src="img/Colored Logo.svg" alt="logo for the coffee of haarlem" />
+        <ul id="nav-button-list">
+          <a href="index.html"><li class="nav-button">Home</li></a>
+          <a href="unique.html"><li class="nav-button">Unique Cafes</li></a>
+          <a href="value.html"><li class="nav-button">Value Cafes</li></a>
+          <a href="cozy.html"><li class="nav-button">Cozy Cafes</li></a>
+          <a href="study.html"><li class="nav-button">Study Cafes</li></a>
+          <a href="contact.html"><li class="nav-button">Contact Us</li></a>
+        </ul>
 
-      <label name="email">Email:</label>
-      <input type="email" name="email" />
+        <svg
+          id="burger-button"
+          xmlns="http://www.w3.org/2000/svg"
+          height="50px"
+          viewBox="0 -960 960 960"
+          width="50px"
+          fill="#000000"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+        <nav id="nav-sidebar">
+          <ul id="nav-side-button-list">
+            <a href="index.html"><li class="nav-button">Home</li></a>
+            <a href="unique.html"><li class="nav-button">Unique Cafes</li></a>
+            <a href="value.html"><li class="nav-button">Value Cafes</li></a>
+            <a href="cozy.html"><li class="nav-button">Cozy Cafes</li></a>
+            <a href="study.html"><li class="nav-button">Study Cafes</li></a>
+            <a href="contact.html"><li class="nav-button">Contact Us</li></a>
+          </ul>
+        </nav>
+      </nav>
+      <figure id="header-banner">
+        <img
+          src="img/haarlem-banner.jpg"
+          alt="picture of buildings in haarlem"
+        />
+        <figcaption><h1>The Cozy Cafes of Haarlem</h1></figcaption>
+      </figure>
+    </header>
 
-      <label name="message">Message:</label>
-      <textarea name="message" rows="4" cols="50"></textarea>
+    <main>
+      <section id="contact-page">
+        <aside>
+          <p>
+            We truly value your feedback and suggestions! Your input helps us
+            improve and continue providing the best possible experience. Whether
+            it's a comment, question, or idea, we’re always eager to hear from
+            you. Please feel free to reach out, and thank you for helping us
+            grow!
+          </p>
+        </aside>
+        <form>
+          <h1>Contact Form</h1>
+          <legend>Fields marked with * are mandatory.</legend>
+          <label class="main-label"
+            >Name*:<input class="text-field" type="text" name="name" required
+          /></label>
+          <label class="main-label"
+            >Prefix*:
+            <label
+              ><input type="radio" name="prefix" value="mr" required />
+              Mr.</label
+            >
+            <label
+              ><input type="radio" name="prefix" value="ms" required />
+              Ms.</label
+            >
+            <label
+              ><input type="radio" name="prefix" value="mx" required />
+              Mx.</label
+            >
+          </label>
+          <label class="main-label"
+            >Phone Number:<input
+              class="text-field"
+              type="tel"
+              name="phone-number"
+          /></label>
+          <label class="main-label"
+            >Email*:<input
+              class="text-field"
+              type="email"
+              name="email"
+              required
+          /></label>
+          <label class="main-label message"
+            >Message*:<textarea
+              name="message"
+              class="text-field"
+              rows="15"
+              required
+            ></textarea>
+          </label>
+          <input type="submit" class="button" />
+        </form>
+      </section>
+    </main>
 
-      <input type="submit" name="submit" />
-    </form>
+    <footer>
+      <p>&copy; 2024 Paulius Silkartas</p>
+
+      <ul id="pages-list">
+        Pages:
+        <li>Home Page</li>
+        <li>Unique Cafes</li>
+        <li>Value Cafes</li>
+        <li>Cozy Cafes</li>
+        <li>Study Cafes</li>
+        <li>Contact Page</li>
+      </ul>
+
+      <ul id="social-media-list">
+        Contact:
+        <li><img src="img/twitter.svg" alt="twitter icon" /></li>
+        <li><img src="img/facebook.svg" alt="facebook icon" /></li>
+        <li><img src="img/instagram.svg" alt="instagram icon" /></li>
+        <li><img src="img/linkedin.svg" alt="linkedin icon" /></li>
+      </ul>
+    </footer>
   </body>
 </html>

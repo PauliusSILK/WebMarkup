@@ -73,10 +73,6 @@ section {
   left: 25px;
 }
 
-#burger-button::selection {
-  transform: scale(200%);
-}
-
 #navbar img {
   height: 90px;
   object-fit: contain;
@@ -391,20 +387,61 @@ main {
   grid-column: 3 / span 2;
 }
 
-button {
+button,
+.button {
   background-color: #977958;
   filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.3));
   border-radius: 20px;
-  padding: 0, 10px;
+  padding: 0 10px;
   border: 0;
   height: 32px;
   font-family: "Roboto Slab", "Serif";
   font-size: 20px;
 }
 
-button:hover {
+button:hover,
+.button:hover {
   background-color: #c09970;
   cursor: pointer;
+}
+
+#contact-page form {
+  width: 70%;
+  float: left;
+  background-color: rgb(173, 140, 103);
+  padding: 5%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 20px;
+  column-gap: 30px;
+}
+
+#contact-page form h1,
+#contact-page form legend,
+#contact-page form .message {
+  grid-column: span 2;
+}
+
+#contact-page form legend {
+  color: rgb(170, 195, 203);
+}
+
+#contact-page form .main-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-field {
+  background-color: #caaa85;
+  border-radius: 5px;
+  border: none;
+  padding: 3%;
+}
+
+aside {
+  width: 29%;
+  float: right;
 }
 
 footer {
