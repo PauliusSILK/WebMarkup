@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/x-icon" href="/img/Favicon.svg" />
+
     <title>The Coffee of Haarlem</title>
   </head>
   <body>
@@ -12,14 +13,15 @@
       <figure>
         <img
           id="header-logo"
-          src="img/Colored Logo.svg"
+          src="img/Colored Logo with text.svg"
           alt="Logo of The Coffee of Haarlem"
         />
         <figcaption>
-          <h1>Welcome to The Coffee of Haarlem!</h1>
           <p>
-            Are you on a day trip visiting Haarlem, or a tourist exploring this
-            city? We will walk you through some of the best cafés in Haarlem!
+            Visiting Haarlem? Discover the city's best cafés, from unique,
+            charming spots to budget-friendly options, cozy date cafés, and
+            work-friendly spaces with Wi-Fi. Find your perfect coffee experience
+            here!
           </p>
         </figcaption>
       </figure>
@@ -27,59 +29,75 @@
 
     <main>
       <section id="cafe-grid">
+        <a href="unique.html">
+          <article class="cafe-box">
+            <img src="img/BoardroomCafe.jpg" alt="" />
+            <figcaption>
+              <h1 class="cafe-box-header">Unique Cafes</h1>
+              <p>
+                "Discover Unique Cafés: Where Coffee Meets Nature, Games, and
+                More!"
+              </p>
+            </figcaption>
+          </article>
+        </a>
+
         <article class="cafe-box">
-          <img src="img/Unique.png" alt="" />
+          <img src="img/Value.png" alt="" />
           <figcaption>
+            <h1 class="cafe-box-header">Value Cafes</h1>
             <p>
-              Not looking for just a great cup of coffee, but also a fun
-              activity, make unforgettable memories at one of these unique
-              cafes!
+              "Affordable Delights: Cafés That Offer Great Taste at a Low Price"
             </p>
           </figcaption>
         </article>
 
         <article class="cafe-box">
-          <img src="img/Unique.png" alt="" />
+          <img src="img/Cozy.png" alt="" />
           <figcaption>
-            <p>
-              Not looking for just a great cup of coffee, but also a fun
-              activity, make unforgettable memories at one of these unique
-              cafes!
-            </p>
+            <h1 class="cafe-box-header">Cozy Cafes</h1>
+            <p>"Charming Escapes: Cozy Cafés with Unbeatable Atmosphere"</p>
           </figcaption>
         </article>
 
         <article class="cafe-box">
-          <img src="img/Unique.png" alt="" />
+          <img src="img/Study.png" alt="" />
           <figcaption>
-            <p>
-              Not looking for just a great cup of coffee, but also a fun
-              activity, make unforgettable memories at one of these unique
-              cafes!
-            </p>
-          </figcaption>
-        </article>
-
-        <article class="cafe-box">
-          <img src="img/Unique.png" alt="" />
-          <figcaption>
-            <p>
-              Not looking for just a great cup of coffee, but also a fun
-              activity, make unforgettable memories at one of these unique
-              cafes!
-            </p>
+            <h1 class="cafe-box-header">Study Cafes</h1>
+            <p>"Quiet and Cozy: The Best Cafés for Studying and Remote Work"</p>
           </figcaption>
         </article>
       </section>
 
       <section id="call-to-contact">
         <figcaption>
-          <h1>Want to contact us?</h1>
-          <p>We'd like to know your opinion and suggestion on this website</p>
+          <h1>Have something to tell us?</h1>
+          <p>Got a suggestion for us to implement or an issue we should fix?</p>
         </figcaption>
         <a href="contact.html"><button>Contact Page</button></a>
       </section>
     </main>
-    <footer>&copy; 2024 Paulius Silkartas</footer>
+
+    <footer>
+      <p>&copy; 2024 Paulius Silkartas</p>
+
+      <ul id="pages-list">
+        Pages:
+        <li>Home Page</li>
+        <li>Unique Cafes</li>
+        <li>Value Cafes</li>
+        <li>Cozy Cafes</li>
+        <li>Study Cafes</li>
+        <li>Contact Page</li>
+      </ul>
+
+      <ul id="social-media-list">
+        Contact:
+        <li><img src="img/twitter.svg" alt="twitter icon" /></li>
+        <li><img src="img/facebook.svg" alt="facebook icon" /></li>
+        <li><img src="img/instagram.svg" alt="instagram icon" /></li>
+        <li><img src="img/linkedin.svg" alt="linkedin icon" /></li>
+      </ul>
+    </footer>
   </body>
 </html>
