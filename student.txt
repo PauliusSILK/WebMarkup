@@ -1,0 +1,5 @@
+Student name: Paulius Silkartas
+Student number: your 726259
+Student class: IT1B
+GitHub Repository: https://github.com/PauliusSILK/WebMarkup
+GitHub Pages URL: https://pauliussilk.github.io/WebMarkup
