@@ -449,6 +449,11 @@ button:hover,
   font-size: 1.5rem;
 }
 
+#contact-page form legend::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 #contact-page fieldset {
   border: none;
 }
