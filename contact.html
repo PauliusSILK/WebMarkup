@@ -13,12 +13,12 @@
       <nav id="navbar">
         <img src="img/Colored Logo.svg" alt="logo for the coffee of haarlem" />
         <ul id="nav-button-list">
-          <a href="index.html"><li class="nav-button">Home</li></a>
-          <a href="unique.html"><li class="nav-button">Unique Cafes</li></a>
-          <a href="value.html"><li class="nav-button">Value Cafes</li></a>
-          <a href="cozy.html"><li class="nav-button">Cozy Cafes</li></a>
-          <a href="study.html"><li class="nav-button">Study Cafes</li></a>
-          <a href="contact.html"><li class="nav-button">Contact Us</li></a>
+          <li><a href="index.html" class="nav-button">Home</a></li>
+          <li><a href="unique.html" class="nav-button">Unique Cafes</a></li>
+          <li><a href="value.html" class="nav-button">Value Cafes</a></li>
+          <li><a href="cozy.html" class="nav-button">Cozy Cafes</a></li>
+          <li><a href="study.html" class="nav-button">Study Cafes</a></li>
+          <li><a href="contact.html" class="nav-button">Contact Us</a></li>
         </ul>
 
         <svg
@@ -35,22 +35,15 @@
         </svg>
         <nav id="nav-sidebar">
           <ul id="nav-side-button-list">
-            <a href="index.html"><li class="nav-button">Home</li></a>
-            <a href="unique.html"><li class="nav-button">Unique Cafes</li></a>
-            <a href="value.html"><li class="nav-button">Value Cafes</li></a>
-            <a href="cozy.html"><li class="nav-button">Cozy Cafes</li></a>
-            <a href="study.html"><li class="nav-button">Study Cafes</li></a>
-            <a href="contact.html"><li class="nav-button">Contact Us</li></a>
+            <li><a href="index.html" class="nav-button">Home</a></li>
+            <li><a href="unique.html" class="nav-button">Unique Cafes</a></li>
+            <li><a href="value.html" class="nav-button">Value Cafes</a></li>
+            <li><a href="cozy.html" class="nav-button">Cozy Cafes</a></li>
+            <li><a href="study.html" class="nav-button">Study Cafes</a></li>
+            <li><a href="contact.html" class="nav-button">Contact Us</a></li>
           </ul>
         </nav>
       </nav>
-      <figure id="header-banner">
-        <img
-          src="img/haarlem-banner.jpg"
-          alt="picture of buildings in haarlem"
-        />
-        <figcaption><h1>The Cozy Cafes of Haarlem</h1></figcaption>
-      </figure>
     </header>
 
     <main>
@@ -65,48 +58,50 @@
           </p>
         </aside>
         <form>
-          <h1>Contact Form</h1>
-          <legend>Fields marked with * are mandatory.</legend>
-          <label class="main-label"
-            >Name*:<input class="text-field" type="text" name="name" required
-          /></label>
-          <label class="main-label"
-            >Prefix*:
-            <label
-              ><input type="radio" name="prefix" value="mr" required />
-              Mr.</label
-            >
-            <label
-              ><input type="radio" name="prefix" value="ms" required />
-              Ms.</label
-            >
-            <label
-              ><input type="radio" name="prefix" value="mx" required />
-              Mx.</label
-            >
-          </label>
-          <label class="main-label"
-            >Phone Number:<input
-              class="text-field"
-              type="tel"
-              name="phone-number"
-          /></label>
-          <label class="main-label"
-            >Email*:<input
-              class="text-field"
-              type="email"
-              name="email"
-              required
-          /></label>
-          <label class="main-label message"
-            >Message*:<textarea
-              name="message"
-              class="text-field"
-              rows="15"
-              required
-            ></textarea>
-          </label>
-          <input type="submit" class="button" />
+          <fieldset>
+            <legend>Contact Form</legend>
+            <em>Fields marked with * are mandatory.</em>
+            <label class="main-label"
+              >Name*:<input class="text-field" type="text" name="name" required
+            /></label>
+            <label class="main-label"
+              >Prefix*:
+              <label
+                ><input type="radio" name="prefix" value="mr" required />
+                Mr.</label
+              >
+              <label
+                ><input type="radio" name="prefix" value="ms" required />
+                Ms.</label
+              >
+              <label
+                ><input type="radio" name="prefix" value="mx" required />
+                Mx.</label
+              >
+            </label>
+            <label class="main-label"
+              >Phone Number:<input
+                class="text-field"
+                type="tel"
+                name="phone-number"
+            /></label>
+            <label class="main-label"
+              >Email*:<input
+                class="text-field"
+                type="email"
+                name="email"
+                required
+            /></label>
+            <label class="main-label message"
+              >Message*:<textarea
+                name="message"
+                class="text-field"
+                rows="15"
+                required
+              ></textarea>
+            </label>
+            <input type="submit" class="button" />
+          </fieldset>
         </form>
       </section>
     </main>
@@ -115,21 +110,37 @@
       <p>&copy; 2024 Paulius Silkartas</p>
 
       <ul id="pages-list">
-        Pages:
-        <li>Home Page</li>
-        <li>Unique Cafes</li>
-        <li>Value Cafes</li>
-        <li>Cozy Cafes</li>
-        <li>Study Cafes</li>
-        <li>Contact Page</li>
+        <li><h3>Pages:</h3></li>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="unique.html">Unique Cafes</a></li>
+        <li><a href="value.html">Value Cafes</a></li>
+        <li><a href="cozy.html">Cozy Cafes</a></li>
+        <li><a href="study.html">Study Cafes</a></li>
+        <li><a href="contact.html">Contact Page</a></li>
       </ul>
 
       <ul id="social-media-list">
-        Contact:
-        <li><img src="img/twitter.svg" alt="twitter icon" /></li>
-        <li><img src="img/facebook.svg" alt="facebook icon" /></li>
-        <li><img src="img/instagram.svg" alt="instagram icon" /></li>
-        <li><img src="img/linkedin.svg" alt="linkedin icon" /></li>
+        <li><h3>Social Media:</h3></li>
+        <li>
+          <a href="https://twitter.com"
+            ><img src="img/twitter.svg" alt="twitter icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://facebook.com"
+            ><img src="img/facebook.svg" alt="facebook icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://instagram.com"
+            ><img src="img/instagram.svg" alt="instagram icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://linkedin.com"
+            ><img src="img/linkedin.svg" alt="linkedin icon"
+          /></a>
+        </li>
       </ul>
     </footer>
   </body>
