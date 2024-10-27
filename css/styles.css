@@ -21,6 +21,9 @@ body {
   background-color: #ffefdf;
   font-family: "Allerta", "serif";
   font-size: 1.1rem;
+  word-spacing: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 h1,
@@ -29,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", serif; /* All headings should use this font */
 }
 h1 {
   margin: 0;
@@ -90,7 +93,8 @@ ul {
   list-style-type: none;
 }
 
-#nav-button-list li {
+#nav-button-list li,
+#nav-side-button-list li {
   padding: 0.6rem 0.5rem;
   text-align: center;
   font-weight: bold;
@@ -102,7 +106,8 @@ ul {
   filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.3));
 }
 
-#nav-button-list li:hover {
+#nav-button-list li:hover,
+#nav-side-button-list li:hover {
   background-color: #91a7ae;
 }
 
@@ -342,7 +347,7 @@ main {
   aspect-ratio: 17 / 11;
 }
 
-.main-img-figure figcaption {
+.main-img-figure > figcaption {
   position: absolute;
   bottom: 0;
   padding: 10px;
@@ -368,6 +373,9 @@ main {
   grid-column: 4 / 5;
   grid-row: 2 / 3;
   font-size: 1rem;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
 }
 
 .cafe-1-img .cafe-contact-info {
@@ -381,6 +389,14 @@ main {
 
 .cafe-opening-closing-info td {
   width: 70%;
+}
+
+.cafe-opening-closing-info tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.cafe-opening-closing-info tr:nth-child(odd) {
+  background-color: #cff;
 }
 
 .cafe-paragraph {
@@ -472,8 +488,31 @@ footer a {
   text-decoration: none;
 }
 
+footer a:active {
+  color: #91a7ae;
+}
+
+footer a:hover {
+  color: #aac3cb;
+}
+
 footer #social-media-list {
   list-style-type: none;
+}
+
+#cookie-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  background-color: #91a7ae;
 }
 
 @media screen and (max-width: 768px) {

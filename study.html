@@ -11,7 +11,11 @@
   <body>
     <header id="header-nav">
       <nav id="navbar">
-        <img src="img/Colored-Logo.svg" alt="logo for the coffee of haarlem" />
+        <img
+          src="img/Colored-Logo.svg"
+          alt="logo for the coffee of haarlem"
+          title="The Coffee of Haarlem logo"
+        />
         <ul id="nav-button-list">
           <li><a href="index.html" class="nav-button">Home</a></li>
           <li><a href="unique.html" class="nav-button">Unique Cafes</a></li>
@@ -22,6 +26,7 @@
         </ul>
 
         <svg
+          onclick="OpenCloseNav()"
           id="burger-button"
           xmlns="http://www.w3.org/2000/svg"
           height="50px"
@@ -48,6 +53,7 @@
         <img
           src="img/haarlem-banner.jpg"
           alt="picture of buildings in haarlem"
+          title="banner"
         />
         <figcaption><h1>The Study Cafes of Haarlem</h1></figcaption>
       </figure>
@@ -60,7 +66,8 @@
             <img
               class="main-img"
               src="img/westhoff-1.jpeg"
-              alt="picture of boardgame cafe front"
+              alt="picture of westhoff cafe front"
+              title="westhoff-1"
             />
             <figcaption>
               <h1>Westhoff Winkel & Werkplek</h1>
@@ -69,12 +76,14 @@
           <img
             class="secondary-img"
             src="img/westhoff-2.jpeg"
-            alt="picture of boardgames 1"
+            alt="picture of workspace sign"
+            title="westhoff-2"
           />
           <img
             class="secondary-img"
             src="img/westhoff-3.jpeg"
-            alt="picture of boardgames 2"
+            alt="picture of coffee"
+            title="westhoff-3"
           />
 
           <ul class="cafe-contact-info">
@@ -146,6 +155,7 @@
               class="main-img"
               src="img/Archief-1.jpeg"
               alt="picture of the Noord-Hollands Archief cafe front"
+              title="Archief-1"
             />
             <figcaption>
               <h1>The café at the Noord-Hollands Archief</h1>
@@ -155,11 +165,13 @@
             class="secondary-img"
             src="img/Archief-2.jpeg"
             alt="picture of cafe board"
+            title="Archief-2"
           />
           <img
             class="secondary-img"
             src="img/Archief-3.jpeg"
             alt="picture of Noord-Hollands Archief plaque"
+            title="Archief-3"
           />
 
           <ul class="cafe-contact-info">
@@ -229,7 +241,14 @@
     </main>
 
     <footer>
-      <p>&copy; 2024 Paulius Silkartas</p>
+      <p>
+        &copy; 2024
+        <a
+          rel="author"
+          href="https://www.linkedin.com/in/paulius-silkartas-142a66244/"
+          >Paulius Silkartas</a
+        >
+      </p>
 
       <ul id="pages-list">
         <li><h3>Pages:</h3></li>
@@ -245,25 +264,37 @@
         <li><h3>Social Media:</h3></li>
         <li>
           <a href="https://twitter.com"
-            ><img src="img/twitter.svg" alt="twitter icon"
+            ><img src="img/twitter.svg" alt="twitter icon" title="twitter"
           /></a>
         </li>
         <li>
           <a href="https://facebook.com"
-            ><img src="img/facebook.svg" alt="facebook icon"
+            ><img src="img/facebook.svg" alt="facebook icon" title="facebook"
           /></a>
         </li>
         <li>
           <a href="https://instagram.com"
-            ><img src="img/instagram.svg" alt="instagram icon"
+            ><img
+              src="img/instagram.svg"
+              alt="instagram icon"
+              title="instagram"
           /></a>
         </li>
         <li>
           <a href="https://linkedin.com"
-            ><img src="img/linkedin.svg" alt="linkedin icon"
+            ><img src="img/linkedin.svg" alt="linkedin icon" title="linkedin"
           /></a>
         </li>
       </ul>
     </footer>
   </body>
+
+  <script>
+    function OpenCloseNav() {
+      let nav = document.getElementById("nav-sidebar");
+      if (nav.style.display == "none") {
+        nav.style.display = "block";
+      } else nav.style.display = "none";
+    }
+  </script>
 </html>

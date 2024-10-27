@@ -15,6 +15,7 @@
           id="header-logo"
           src="img/Colored-Logo-with-text.svg"
           alt="Logo of The Coffee of Haarlem"
+          title="The Coffee of Haarlem logo"
         />
         <figcaption>
           <p>
@@ -31,7 +32,11 @@
       <section id="cafe-grid">
         <a href="unique.html">
           <figure class="cafe-box">
-            <img src="img/BoardroomCafe.jpg" alt="" />
+            <img
+              src="img/BoardroomCafe.jpg"
+              alt="boardroom cafe front"
+              title="boradroom"
+            />
             <figcaption>
               <h1 class="cafe-box-header">Unique Cafes</h1>
               <p>
@@ -44,7 +49,11 @@
 
         <a href="value.html">
           <figure class="cafe-box">
-            <img src="img/Value.png" alt="" />
+            <img
+              src="img/Value.png"
+              alt="picture of big coffee cup"
+              title="Value"
+            />
             <figcaption>
               <h1 class="cafe-box-header">Value Cafes</h1>
               <p>
@@ -57,7 +66,7 @@
 
         <a href="cozy.html">
           <figure class="cafe-box">
-            <img src="img/Cozy.png" alt="" />
+            <img src="img/Cozy.png" alt="picture of a cozy cafe" title="cozy" />
             <figcaption>
               <h1 class="cafe-box-header">Cozy Cafes</h1>
               <p>"Charming Escapes: Cozy Cafés with Unbeatable Atmosphere"</p>
@@ -67,7 +76,11 @@
 
         <a href="study.html">
           <figure class="cafe-box">
-            <img src="img/Study.png" alt="" />
+            <img
+              src="img/Study.png"
+              alt="picture of a laptop in a cafe"
+              title="study"
+            />
             <figcaption>
               <h1 class="cafe-box-header">Study Cafes</h1>
               <p>
@@ -86,7 +99,14 @@
     </main>
 
     <footer>
-      <p>&copy; 2024 Paulius Silkartas</p>
+      <p>
+        &copy; 2024
+        <a
+          rel="author"
+          href="https://www.linkedin.com/in/paulius-silkartas-142a66244/"
+          >Paulius Silkartas</a
+        >
+      </p>
 
       <ul id="pages-list">
         <li><h3>Pages:</h3></li>
@@ -102,25 +122,46 @@
         <li><h3>Social Media:</h3></li>
         <li>
           <a href="https://twitter.com"
-            ><img src="img/twitter.svg" alt="twitter icon"
+            ><img src="img/twitter.svg" alt="twitter icon" title="twitter"
           /></a>
         </li>
         <li>
           <a href="https://facebook.com"
-            ><img src="img/facebook.svg" alt="facebook icon"
+            ><img src="img/facebook.svg" alt="facebook icon" title="facebook"
           /></a>
         </li>
         <li>
           <a href="https://instagram.com"
-            ><img src="img/instagram.svg" alt="instagram icon"
+            ><img
+              src="img/instagram.svg"
+              alt="instagram icon"
+              title="instagram"
           /></a>
         </li>
         <li>
           <a href="https://linkedin.com"
-            ><img src="img/linkedin.svg" alt="linkedin icon"
+            ><img src="img/linkedin.svg" alt="linkedin icon" title="linkedin"
           /></a>
         </li>
       </ul>
     </footer>
+
+    <section id="cookie-popup">
+      Do you accept our cookies?
+      <button onclick="HideCookies()">Yes</button>
+    </section>
   </body>
+
+  <script>
+    const cookies = localStorage.getItem("cookies");
+    console.log(cookies != "accepted");
+    if (cookies != "accepted") {
+      document.getElementById("cookie-popup").style.display = "flex";
+    }
+
+    function HideCookies() {
+      document.getElementById("cookie-popup").style.display = "none";
+      localStorage.setItem("cookies", "accepted");
+    }
+  </script>
 </html>

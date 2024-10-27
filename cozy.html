@@ -11,7 +11,11 @@
   <body>
     <header id="header-nav">
       <nav id="navbar">
-        <img src="img/Colored-Logo.svg" alt="logo for the coffee of haarlem" />
+        <img
+          src="img/Colored-Logo.svg"
+          alt="logo for the coffee of haarlem"
+          title="The Coffee of Haarlem"
+        />
         <ul id="nav-button-list">
           <li><a href="index.html" class="nav-button">Home</a></li>
           <li><a href="unique.html" class="nav-button">Unique Cafes</a></li>
@@ -22,6 +26,7 @@
         </ul>
 
         <svg
+          onclick="OpenCloseNav()"
           id="burger-button"
           xmlns="http://www.w3.org/2000/svg"
           height="50px"
@@ -48,6 +53,7 @@
         <img
           src="img/haarlem-banner.jpg"
           alt="picture of buildings in haarlem"
+          title="banner"
         />
         <figcaption><h1>The Cozy Cafes of Haarlem</h1></figcaption>
       </figure>
@@ -61,6 +67,7 @@
               class="main-img"
               src="img/jetties.jpeg"
               alt="picture of jetties cafe front"
+              title="Jetties"
             />
             <figcaption>
               <h1>Jetties</h1>
@@ -138,6 +145,7 @@
               class="main-img"
               src="img/bylima.jpeg"
               alt="picture of bylima cafe front"
+              title="ByLima"
             />
             <figcaption>
               <h1>By Lima</h1>
@@ -209,7 +217,14 @@
     </main>
 
     <footer>
-      <p>&copy; 2024 Paulius Silkartas</p>
+      <p>
+        &copy; 2024
+        <a
+          rel="author"
+          href="https://www.linkedin.com/in/paulius-silkartas-142a66244/"
+          >Paulius Silkartas</a
+        >
+      </p>
 
       <ul id="pages-list">
         <li><h3>Pages:</h3></li>
@@ -225,25 +240,37 @@
         <li><h3>Social Media:</h3></li>
         <li>
           <a href="https://twitter.com"
-            ><img src="img/twitter.svg" alt="twitter icon"
+            ><img src="img/twitter.svg" alt="twitter icon" title="twitter"
           /></a>
         </li>
         <li>
           <a href="https://facebook.com"
-            ><img src="img/facebook.svg" alt="facebook icon"
+            ><img src="img/facebook.svg" alt="facebook icon" title="facebook"
           /></a>
         </li>
         <li>
           <a href="https://instagram.com"
-            ><img src="img/instagram.svg" alt="instagram icon"
+            ><img
+              src="img/instagram.svg"
+              alt="instagram icon"
+              title="instagram"
           /></a>
         </li>
         <li>
           <a href="https://linkedin.com"
-            ><img src="img/linkedin.svg" alt="linkedin icon"
+            ><img src="img/linkedin.svg" alt="linkedin icon" title="linkedin"
           /></a>
         </li>
       </ul>
     </footer>
   </body>
+
+  <script>
+    function OpenCloseNav() {
+      let nav = document.getElementById("nav-sidebar");
+      if (nav.style.display == "none") {
+        nav.style.display = "block";
+      } else nav.style.display = "none";
+    }
+  </script>
 </html>

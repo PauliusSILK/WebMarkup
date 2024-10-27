@@ -11,7 +11,11 @@
   <body>
     <header id="header-nav">
       <nav id="navbar">
-        <img src="img/Colored-Logo.svg" alt="logo for the coffee of haarlem" />
+        <img
+          src="img/Colored-Logo.svg"
+          alt="logo for the coffee of haarlem"
+          title="The Coffee of Haarlem logo"
+        />
         <ul id="nav-button-list">
           <li><a href="index.html" class="nav-button">Home</a></li>
           <li><a href="unique.html" class="nav-button">Unique Cafes</a></li>
@@ -22,6 +26,7 @@
         </ul>
 
         <svg
+          onclick="OpenCloseNav()"
           id="burger-button"
           xmlns="http://www.w3.org/2000/svg"
           height="50px"
@@ -48,6 +53,7 @@
         <img
           src="img/haarlem-banner.jpg"
           alt="picture of buildings in haarlem"
+          title="banner"
         />
         <figcaption><h1>The Unique Cafes of Haarlem</h1></figcaption>
       </figure>
@@ -61,6 +67,7 @@
               class="main-img"
               src="img/Boardroom-1.jpg"
               alt="picture of boardgame cafe front"
+              title="Boardroom-1"
             />
             <figcaption>
               <h1>The Boardroom</h1>
@@ -70,11 +77,13 @@
             class="secondary-img"
             src="img/Boardroom-2.jpg"
             alt="picture of boardgames 1"
+            title="Boardroom-2"
           />
           <img
             class="secondary-img"
             src="img/Boardroom-3.jpg"
             alt="picture of boardgames 2"
+            title="Boardroom-3"
           />
 
           <ul class="cafe-contact-info">
@@ -168,7 +177,8 @@
             <img
               class="main-img"
               src="img/kweekcafe-1.jpeg"
-              alt="picture of boardgame cafe front"
+              alt="picture of kweekcafe cafe front"
+              title="kweekcafe-1"
             />
             <figcaption>
               <h1>Kweekcafe</h1>
@@ -178,11 +188,13 @@
             class="secondary-img"
             src="img/kweekcafe-2.jpeg"
             alt="picture of kweekcafe sign"
+            title="kweekcafe-2"
           />
           <img
             class="secondary-img"
             src="img/kweekcafe-3.jpeg"
             alt="picture of cow statue at kweekcafe"
+            title="kweekcafe-3"
           />
 
           <ul class="cafe-contact-info">
@@ -196,7 +208,7 @@
 
           <table class="cafe-opening-closing-info">
             <tr>
-              <th>Opening hours:</th>
+              <th colspan="2">Opening hours:</th>
             </tr>
             <tr>
               <th>Monday</th>
@@ -266,7 +278,14 @@
     </main>
 
     <footer>
-      <p>&copy; 2024 Paulius Silkartas</p>
+      <p>
+        &copy; 2024
+        <a
+          rel="author"
+          href="https://www.linkedin.com/in/paulius-silkartas-142a66244/"
+          >Paulius Silkartas</a
+        >
+      </p>
 
       <ul id="pages-list">
         <li><h3>Pages:</h3></li>
@@ -282,25 +301,37 @@
         <li><h3>Social Media:</h3></li>
         <li>
           <a href="https://twitter.com"
-            ><img src="img/twitter.svg" alt="twitter icon"
+            ><img src="img/twitter.svg" alt="twitter icon" title="twitter"
           /></a>
         </li>
         <li>
           <a href="https://facebook.com"
-            ><img src="img/facebook.svg" alt="facebook icon"
+            ><img src="img/facebook.svg" alt="facebook icon" title="facebook"
           /></a>
         </li>
         <li>
           <a href="https://instagram.com"
-            ><img src="img/instagram.svg" alt="instagram icon"
+            ><img
+              src="img/instagram.svg"
+              alt="instagram icon"
+              title="instagram"
           /></a>
         </li>
         <li>
           <a href="https://linkedin.com"
-            ><img src="img/linkedin.svg" alt="linkedin icon"
+            ><img src="img/linkedin.svg" alt="linkedin icon" title="linkedin"
           /></a>
         </li>
       </ul>
     </footer>
   </body>
+
+  <script>
+    function OpenCloseNav() {
+      let nav = document.getElementById("nav-sidebar");
+      if (nav.style.display == "none") {
+        nav.style.display = "block";
+      } else nav.style.display = "none";
+    }
+  </script>
 </html>
