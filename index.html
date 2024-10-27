@@ -152,16 +152,5 @@
     </section>
   </body>
 
-  <script>
-    const cookies = localStorage.getItem("cookies");
-    console.log(cookies != "accepted");
-    if (cookies != "accepted") {
-      document.getElementById("cookie-popup").style.display = "flex";
-    }
-
-    function HideCookies() {
-      document.getElementById("cookie-popup").style.display = "none";
-      localStorage.setItem("cookies", "accepted");
-    }
-  </script>
+  <script src="script.js"></script>
 </html>

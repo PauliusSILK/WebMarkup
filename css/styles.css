@@ -80,6 +80,9 @@ ul {
   display: none;
   position: absolute;
   left: 25px;
+  height: fit-content;
+  width: fit-content;
+  padding: 0;
 }
 
 #navbar img {
